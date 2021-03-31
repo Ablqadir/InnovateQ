@@ -1,0 +1,23 @@
+<div>
+<br>>
+<h3>Data Table</h3>
+</div>
+<div mdc-data-table>
+  <table mdcDataTableTable>
+    <thead>
+      <tr mdcDataTableHeaderRow>
+        <th mdcDataTableHeaderCell>UserId</th>
+        <th mdcDataTableHeaderCell numeric>Id</th>
+        <th mdcDataTableHeaderCell numeric>Title</th>
+      </tr>
+    </thead>
+    <tbody mdcDataTableContent>
+      <tr mdcDataTableRow *ngFor="let todo of todos">
+        <td mdcDataTableCell>{{todo.userId}}</td>
+        <td mdcDataTableCell numeric>{{todo.id}}</td>
+        <td mdcDataTableCell numeric>{{todo.title}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button mdc-button raised>Example</button>
+</div>

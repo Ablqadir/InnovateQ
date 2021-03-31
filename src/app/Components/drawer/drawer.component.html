@@ -1,0 +1,17 @@
+<mdc-drawer>
+  <mdc-drawer-header title="Drawer Title" subtitle="Subtitle"></mdc-drawer-header>
+  <mdc-drawer-content>
+    <mdc-list>
+      <a mdc-list-item routerLink='/card' [activated]="true">
+        <mdc-icon mdcListItemGraphic></mdc-icon>Card
+      </a>
+      <a mdc-list-item routerLink='/datatable'>
+        <mdc-icon mdcListItemGraphic></mdc-icon>Data Table
+      </a>
+      <a mdc-list-item routerLink='/reactiveform'>
+        <mdc-icon mdcListItemGraphic></mdc-icon>Reactive Form
+      </a>
+      <mdc-list-divider></mdc-list-divider>
+    </mdc-list>
+  </mdc-drawer-content>
+</mdc-drawer>

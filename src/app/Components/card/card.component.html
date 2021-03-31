@@ -1,0 +1,20 @@
+<div>
+  <br>
+  <br>
+  <h3>Card</h3>
+  </div>
+
+
+  <div class="demo-app-bar-content" >
+
+    <div class="mdl-cell mdl-cell--row" *ngFor="let album of albums">
+      <div class="mdl-cell mdl-cell--1-col"><div class="mdc-image-list__image-aspect-container">
+        <img class="mdc-image-list__image" src="{{album.thumbnailUrl}}">
+      </div>
+      <div class="mdc-image-list__supporting">
+        <span class="mdc-image-list__label">{{album.id}}</span>
+      </div></div>
+      </div>
+    </div>
+
+
